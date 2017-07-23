@@ -1,0 +1,43 @@
+body {
+  background: #f9fbfc; }
+
+header {
+  background-image: none;
+  clip-path: polygon(0 0, 100% 0, 100% 72%, 50% 100%, 0 80%); }
+  header .jumbotron {
+    padding: 4em 0 4em 0; }
+    header .jumbotron .medio {
+      width: 100%; }
+    header .jumbotron h1 {
+      text-align: center; }
+
+.contenedor {
+  padding-bottom: 3em; }
+  .contenedor .formulario h1, .contenedor .mapa h1 {
+    padding-bottom: .5em;
+    font-family: 'Open Sans', sans-serif; }
+  .contenedor .formulario form, .contenedor .mapa form {
+    background: white;
+    border-radius: 5px;
+    padding: 2em 3em;
+    max-height: 363px;
+    overflow: hidden;
+    box-shadow: 1px 2px 5px #eee; }
+    .contenedor .formulario form .form-group .form-control, .contenedor .mapa form .form-group .form-control {
+      border-radius: 0;
+      border: none;
+      background: none;
+      box-shadow: none;
+      border-bottom: 1px solid #d7d7d7;
+      font-family: 'Montserrat', sans-serif;
+      transition: .3s; }
+    .contenedor .formulario form .form-group .form-control:focus, .contenedor .mapa form .form-group .form-control:focus {
+      border-bottom: 1px solid #528ddf; }
+    .contenedor .formulario form .btn, .contenedor .mapa form .btn {
+      background: #f7684d;
+      font-family: 'Montserrat', sans-serif;
+      color: white; }
+  .contenedor .mapa iframe {
+    width: 100%;
+    height: 363px;
+    max-height: 363px; }

@@ -1,0 +1,345 @@
+//	clip-path: polygon(0 0,100% 0, 100% 50%,75% 100%,0 50%)
+//font-family: 'Open Sans', sans-serif
+//font-family: 'Montserrat', sans-serif
+body
+	overflow-x: hidden
+/* -------------------------------------------------
+  * --------------------- Nav ---------------------*/
+.navbar
+	background: transparent
+	margin: 0
+	border: 0
+	.navbar-brand
+		color: white
+		font-family: 'Open Sans', sans-serif
+		font-weight: bold
+		img
+			width: 25px
+	.navbar-collapse
+		ul
+			li
+				a
+					color: white
+					text-transform: uppercase
+					font-family: 'Montserrat', sans-serif
+					font-weight: bold
+					transition: .3s
+				a:hover
+					color: #43ecd2
+/* -------------------------------------------------
+  * -------------------- Header --------------------*/
+header
+	margin-top: -51px
+	background-image: url("../img/bg.jpg")
+	background-repeat: no-repeat
+	background-attachment: scroll
+	background-position: center center
+	background-size: cover
+	clip-path: polygon(0 0,100% 0, 100% 72%,75% 100%,0 80%)
+	.jumbotron
+		margin-bottom: 0
+		padding: 10em 0 18em 0
+		background: none
+		text-align: left
+		background: linear-gradient(left, rgba(82,141,223,.8), rgba(43,223,166,.5))
+		background: -webkit-linear-gradient(left, rgba(82,141,223,.8), rgba(43,223,166,.5))
+		background: -o-linear-gradient(left, rgba(82,141,223,.8), rgba(43,223,166,.5))
+		//rgba(0,222,255,.5)
+		//rgba(43,223,166,.5
+		color: white
+		.medio
+			width: 75%
+		h1
+			font-family: 'Open Sans', sans-serif
+			font-size: 5rem
+			margin-bottom: 1em
+			font-weight: lighter
+		.btn
+			color: white
+			border-radius: 50px
+			padding: .5em 2em
+			font-weight: bold
+			font-size: 2rem
+			font-family: 'Montserrat', sans-serif
+		.btn:first-child
+			background: #00deff
+			margin-right: 1em
+		.btn:last-child
+			background: #2bdfa6
+/* -----------------------------------------------------------
+  * ----------------------- Servicios -----------------------*/
+h2
+	color: #38454f
+	font-family: 'Open Sans', sans-serif
+	font-weight: 600
+.servicio
+	padding: 4em 0
+	align-items: center
+	h3
+		text-align: center
+		font-family: "Montserrat", sans-serif
+		color: #737a89
+	img
+		align-items: center
+/* -----------------------------------------------
+  * ----------------- Trabajamos -----------------*/
+.trabajamos
+	.col-md-5
+		padding-right: 0
+	.mapa,
+	.como
+		float: left
+		position: relative
+		min-height: 1px
+		padding-left: 15px
+	.mapa
+		width: 38%
+		iframe
+			width: 100%
+			max-height: 545px
+	.como
+		width: 62%
+		background: #f9fbfc
+		.row_item
+			padding: 1em 25%
+			ul
+				margin-top: 3em
+				li
+					background: white
+					display: block
+					width: 47%
+					position: relative
+					padding: 1.5em 2em
+					border-radius: 5px
+					margin-bottom: 1em
+					font-family: 'Montserrat', sans-serif
+					.numero
+						position: absolute
+						text-align: center
+						top: 25.5%
+						left: -15px
+						border: 2px solid white
+						background: #2bdfa6
+						display: block
+						height: 30px
+						width: 30px
+						border-radius: 50%
+						line-height: 28px
+						color: #fff
+						outline: 0
+						transition: all .3s
+/*--------------------------------------------------
+  * ------------------ Quienes ------------------*/
+.quienes
+	.row_item
+		width: 100%
+		padding: 3em 5em 4em 8em
+		p
+			color: #828896
+			font-family: 'Montserrat', sans-serif
+			line-height: 25px
+
+	.col-md-5
+		img
+			width: 100%
+/*--------------------------------------------------------
+  *--------------------- Servicios ---------------------*/
+.servicios
+	padding: 5em 0 10em 0
+	background: #f9fbfc
+	h4
+		color: #9ba5ad
+	.row
+		padding-top: 2em
+	.col-md-3
+		height: 156px
+		margin-bottom: 3em
+		.row_item
+			position: relative
+			background: white
+			border-radius: 10px
+			padding: 2em
+			//margin-bottom: 30px
+			transition: .3s
+			z-index: 1000
+			box-shadow: 1px 2px 30px #eee
+			overflow: hidden
+			h3
+				text-align: center
+				font-family: 'Open Sans', sans-serif
+				color: #6b7282
+				font-weight: 600
+			p
+				position: relative
+				top: 0
+				transform: rotateY(180deg)
+				z-index: 5
+				display: none
+				font-family: 'Montserrat', sans-serif
+				font-size: 1.2rem
+				transition: .3s
+			img
+				padding-left: 25%
+		.row_item:last-child
+			h3
+				font-size: 2rem
+	.col-md-3:hover
+		.row_item,
+		p
+			transform: rotateY(180deg)
+			display: block
+		.row_item
+			height: 173px
+		img,h3
+			display: none
+/* ----------------------------------------------------
+  * ------------------- Contactanos -------------------*/
+.contactanos
+	background: linear-gradient(left, rgba(82,141,223,.5), rgba(43,223,166,.5))
+	background: -o-linear-gradient(left, rgba(82,141,223,.5), rgba(43,223,166,.5))
+	background: -ms-linear-gradient(left, rgba(82,141,223,.5), rgba(43,223,166,.5))
+	background: -webkit-linear-gradient(left, rgba(82,141,223,.5), rgba(43,223,166,.5))
+	padding: 2em 0 0 0
+	.media
+	.media-left
+		position: relative
+		top: 25%
+		i
+			font-size: 5rem
+	.media-body
+		position: relative
+		left: 5em
+		top: -3.2em
+		.media-heading
+			font-family: 'Montserrat', sans-serif
+			text-transform: uppercase
+			font-weight: bold
+	a
+		color: white
+	.btn
+		margin-top: 2.5%
+		background: #f7684d
+		float: right
+		font-family: 'Montserrat', sans-serif
+		font-size: 2rem
+		padding: .5em 1em
+/* ----------------------------------------------------------------
+  * ---------------------------- Footer ---------------------------*/
+footer
+	.top
+		padding: 3em 0
+		background: #29323f
+		h3
+			color: white
+			font-family: 'Open Sans', sans-serif
+			font-weight: bold
+		ul
+			padding-left: 0
+			li,li>a
+				color: #86939e
+				font-family: 'Montserrat', sans-serif
+				transition: .3s
+			a:hover
+			 color: #43ecd2
+			 text-decoration: none
+		.redes
+			li
+				list-style: none
+				display: inline-block
+				a
+					margin-right: 1em
+					font-size: 2rem
+		.soporte,
+		.direccion
+			ul
+				li
+					list-style: none
+					line-height: 25px
+		.ubicacion
+			text-transform: capitalize
+	.bottom
+		background: #242c39
+		padding: 2em 0
+		p
+			color: #86939e
+			font-family: 'Montserrat', sans-serif
+			a
+				transition: .3s
+			a:hover
+			 color: #43ecd2
+			 text-decoration: none
+/* ------------------------------------------------------------------
+  * ------ Responsive ------*/
+
+
+@media screen and (max-width: 1024px)// Ipad pro
+	.navbar
+		.navbar-brand
+			position: absolute
+			width: 25%
+	.trabajamos
+		.como
+			.row_item
+				padding: 2em
+				.container
+					margin: 0
+					width: 100%
+					ul
+						li
+							width: 100%
+@media screen and (max-width: 768px)// Ipad
+	.navbar
+		ul
+			li
+				a
+					padding: 15px 5px
+					font-size: 1.2rem
+	.trabajamos
+		.mapa,
+		.como
+			float: left
+			position: relative
+			min-height: 1px
+			padding-left: 15px
+		.mapa
+			width: 100%
+			iframe
+				width: 100%
+				max-height: 545px
+		.como
+			width: 100%
+	.servicios
+		.col-md-3
+			.row_item
+				img
+					padding-left: 35%
+@media screen and (max-width: 414px)//Telefonos
+	.navbar
+		.navbar-brand
+			width: 80%
+		.collapse,.navbar-header
+			background: linear-gradient(left, rgba(82,141,223,.8), rgba(43,223,166,.5))
+			background: -webkit-linear-gradient(left, rgba(82,141,223,.8), rgba(43,223,166,.5))
+			background: -o-linear-gradient(left, rgba(82,141,223,.8), rgba(43,223,166,.5))
+			background: -ms-linear-gradient(left, rgba(82,141,223,.8), rgba(43,223,166,.5))
+	header
+		clip-path: polygon(0 0,100% 0, 100% 72%,75% 75%,0 72%)
+		.jumbotron
+			padding: 10em 0 18em 0
+			.medio
+				width: 100%
+			h1
+				font-size: 3rem
+			.btn
+				padding: .5em 2em
+				font-size: 1.3rem
+	.quienes
+		.row_item
+			width: 100%
+			padding: 3em 2em 4em 2em
+			p
+				text-align: justify
+
+		.col-md-5
+			img
+				width: 100%

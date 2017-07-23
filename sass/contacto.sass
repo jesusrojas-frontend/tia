@@ -1,0 +1,44 @@
+body
+	background: #f9fbfc
+header
+	background-image: none
+	clip-path: polygon(0 0,100% 0, 100% 72%,50% 100%,0 80%)
+	.jumbotron
+		padding: 4em 0 4em 0
+		.medio
+			width: 100%
+		h1
+			text-align: center
+.contenedor
+	padding-bottom: 3em
+	.formulario,.mapa
+		h1
+			padding-bottom: .5em
+			font-family: 'Open Sans', sans-serif
+		form
+			background: white
+			border-radius: 5px
+			padding: 2em 3em
+			max-height: 363px
+			overflow: hidden
+			box-shadow: 1px 2px 5px #eee
+			.form-group
+				.form-control
+					border-radius: 0
+					border: none
+					background: none
+					box-shadow: none
+					border-bottom: 1px solid #d7d7d7
+					font-family: 'Montserrat', sans-serif
+					transition: .3s
+				.form-control:focus
+					border-bottom: 1px solid rgb(82,141,223)
+			.btn
+				background: #f7684d
+				font-family: 'Montserrat', sans-serif
+				color: white
+	.mapa
+		iframe
+			width: 100%
+			height: 363px
+			max-height: 363px

@@ -1,0 +1,209 @@
+doctype html
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	title Santa teresa de los angeles
+	link(rel="stylesheet", href="bootstrap/css/bootstrap.min.css")
+	link(rel="stylesheet", href="font-awesome/css/font-awesome.min.css")
+	link(rel="stylesheet", href="font/fuentes.css")
+	link(rel="stylesheet", href="css/animations.css")
+	link(rel="stylesheet", href="css/estilos.css")
+body
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Lab Santa teresa de los andes</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#como">Como trabajamos</a></li>
+				<li><a href="#quienes">Quienes somos</a></li>
+				<li><a href="#servicios">Nuestros servicios</a></li>
+				<li><a href="/contacto">Contacto</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	header
+		<div class="jumbotron">
+			<div class="container">
+				.medio
+					h1!= "Somos un equipo especializado en el <strong>Cuidado de tu salud</strong>"
+				p
+					a.btn.btn-log(href="/contacto", role="button") Buscanos
+					a.btn.btn-log(href="#servicios", role="button") Ver los servicios
+			</div>
+	section.container.servicio
+		.row
+			.col-md-4.a
+				img(src="", alt="imagen")
+				h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			.col-md-4.b
+				img(src="", alt="imagen")
+				h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			.col-md-4.c
+				img(src="", alt="imagen")
+				h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	section.trabajamos
+		.row
+			.mapa
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.0488563210605!2d-69.28965517084883!3d10.083067699549655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8767879883c9c5%3A0x8100459705ca17fe!2sCalle+Guri%2C+Barquisimeto+3001%2C+Lara!5e0!3m2!1ses!2sve!4v1494103010131" width="100%" height="900" frameborder="0" style="border:0" allowfullscreen></iframe>
+			.como#como
+				.row_item
+					.container
+						h2 ¿Como Trabajamos?
+						ul
+							li.numeroa!= "<span class='numero'>1</span> Ustedes se contactan con nuestras oficinas."
+							li.numerob!= "<span class='numero'>2</span> Nuestro personal toma muestras sin moverse de sus instalaciones."
+							li.numeroc!= "<span class='numero'>3</span> Nosotros trasladamos dichas muestras hasta nuestras instalaciones."
+							li.numerod!= "<span class='numero'>4</span> Porcesamos las mismas."
+							li.numeroe!= "<span class='numero'>5</span> Emitimos los resultados tanto en físico así como por vía correo electrónico."
+	section.quienes#quienes
+		.row
+			.col-md-7
+				.row_item
+						h2 ¿Quienes Somos?
+						p!= "<strong>LABORATORIO CLINICO SANTA TERESA DE LOS ANDES</strong>, es una empresa que busca innovar, transformar ofreciendo un servicio de calidad integrado alcanzando el mas alto nivel de excelencia, profesionalismo en el área de la salud para lograr cubrir las necesidades de nuestros pacientes, ofreciéndoles un servicio en salud ocupacional.<br><br>Hacemos examenes medico preventivo, a través  de planes estructurados, a saber, plan de pre y post Empleo, Pre y post Vacacional, exámenes periódicos, atención médica autorizada a todos sus Empleados bien sea en la sede de su empresa y/o en nuestras instalaciones. "
+			.col-md-5
+				img(src="img/quienes.jpg", alt="imagen")
+	section.servicios#servicios
+		.container
+			h2.text-center ¿Que Tratamos?
+			h4.text-center Nosotros brindamos los siguientes servicios de salud
+			.row
+				.col-md-3.col-sm-6
+					.row_item
+						img(src="img/1-Hermatologia.png", alt="imagen")
+						h3 Hermatología
+						p.
+							Estudio en el cual se reportan valores correspondientes a la cantidad y distribución porcentual de las células de la sangre, el valor de hemoglobina y los índices hematimétricos.
+				.col-md-3.col-sm-6
+					.row_item
+						img(src="", alt="imagen")
+						h3 Marcadores
+						p.
+							Los marcadores tumorales se usan para ayudar a detectar, a diagnosticar y a controlar algunos tipos de cáncer.
+				.col-md-3.col-sm-6
+					.row_item
+						img(src="img/3-Hormonas.png", alt="imagen")
+						h3 Hormonas
+						p.
+							Se realizan determinaciones analíticas de hormonas para el diagnóstico, tratamiento y evaluación del paciente de patologías clínicas principalmente derivadas de endocrinología, oncología y diagnóstico prenatal.
+				.col-md-3.col-sm-6
+					.row_item
+						img(src="img/4-Serologia.png", alt="imagen")
+						h3 Serología
+						p.
+							Es un análisis de sangre para detectar la presencia de anticuerpos contra un microorganismo.
+				.col-md-3.col-sm-6
+					.row_item
+						img(src="img/5-Hepatitis.png", alt="imagen")
+						h3 Hepatitis
+						p.
+							Mediante un análisis de sangre se mide la presencia de algunas enzimas, bilirrubina y proteínas en sangre, con el objetivo de determinar si existe alguna alteración en el hígado
+				.col-md-3.col-sm-6
+					.row_item
+						img(src="img/6-Heces.png", alt="imagen")
+						h3 Heces
+						p.
+							El análisis de heces es una prueba sencilla y económica que permite detectar enfermedades de todo el tubo digestivo y las glándulas asociadas.
+				.col-md-3.col-sm-6
+					.row_item
+						img(src="img/7-Orina.png", alt="imagen")
+						h3 Orina
+						p.
+							Una simple muestra de orina puede ayudarnos, una vez analizada, a diagnosticar enfermedades autoinmunes, del riñón, sistémicas como la diabetes o infecciones urinarias.
+				.col-md-3.col-sm-6
+					.row_item
+						img(src="img/8-Inmunologia.png", alt="imagen")
+						h3 Inmunologia
+						p.
+							Las pruebas inmunológicas utilizan un antígeno para detectar anticuerpos dirigidos contra un patógeno, o utilizan un anticuerpo para detectar un antígeno del patógeno en una muestra del paciente.
+				.col-md-3.col-sm-6
+					.row_item
+						img(src="img/9-Microbiologia.png", alt="imagen")
+						h3 Microbiología
+						p.
+							El principal objetivo de la microbiología clínica es identificar el agente etiológico de una infección y determinar la susceptibilidad a determinados antimicrobianos.
+				.col-md-3.col-sm-6
+					.row_item
+						img(src="img/10-Drogas.png", alt="imagen")
+						h3 Drogas de abuso
+						p.
+							Un examen toxicológico se refiere a diversas pruebas que determinan el tipo y la cantidad aproximada de drogas legales e ilegales que una persona ha tomado
+				.col-md-3.col-sm-6
+					.row_item
+						img(src="img/11-Inmunoglobulina.png", alt="imagen")
+						h3 Inmunoglobulinas
+						p.
+							Mide  el nivel de ciertas inmunoglobulinas, o anticuerpos, en la sangre. Los anticuerpos son proteínas producidas por el sistema inmunológico para atacar a los antígenos, como las bacterias, los virus y los alérgenos.
+				.col-md-3.col-sm-6
+					.row_item
+						img(src="img/12-Quimica sanguinea.png", alt="imagen")
+						h3 Química Sanguínea
+						p.
+							Es una serie de pruebas que suministra información al médico o Naturópata de las condiciones del metabolismo en el cuerpo humano y además como funcionan ciertos órganos como el hígado riñón etc.
+	.contactanos
+		.container
+			.col-md-6
+				<div class="media">
+					<div class="media-left">
+						<a href="/contacto">
+							i.fa.fa-bullhorn
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Estoy interesado en sus servicios</h4>
+						p Me gustaria contratar sus servicios.
+					</div>
+				</div>
+			.col-md-6
+				a.btn(href="/contacto") Contactanos
+	footer
+		.top
+			.container
+				.row
+					.col-md-4
+						h3 Siguenos
+						ul.redes
+							li
+								a(href="#")
+									i.fa.fa-google
+							li
+								a(href="#")
+									i.fa.fa-facebook
+							li
+								a(href="#")
+									i.fa.fa-twitter
+							li
+								a(href="#")
+									i.fa.fa-instagram
+					.col-md-4.soporte
+						h3 Soporte
+						ul
+							li 
+								a(href="#") FAQs
+							li 
+								a(href="#") Contacto
+							li 
+								a(href="#") Blog
+					.col-md-4.direccion
+						h3 Direccion
+						ul
+							li labsantateresadelosangeles@gmail.com
+							li.ubicacion Urb. Patarata II Calle guri casa nro 280
+							li +58 0251-719-1923 / 0251-0514521
+		.bottom
+			.container
+				p!= "Copyright &copy; Diseño y desarrollo por <a href='http://jesusrojas.com.ve' target='_blank'>Jesús Rojas</a>"
+	script(src="js/jquery.js")
+	script(src="bootstrap/js/bootstrap.min.js")
+	script(src="js/app.js")
+	//- img(src="img/landing.png", alt="",style="width: 100%; margin-top: 4em")
