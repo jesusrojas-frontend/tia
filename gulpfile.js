@@ -10,12 +10,14 @@ gulp.task('default', () =>{
   });
   gulp.watch('./**/*.html').on('change',browserSync.reload);
   gulp.watch('./galeria/*.html').on('change',browserSync.reload);
+  gulp.watch('./blog/*.html').on('change',browserSync.reload);
   gulp.watch('./**/*.css').on('change',browserSync.reload);
   gulp.watch('./*.php').on('change',browserSync.reload);
   gulp.watch('./js/*.js').on('change',browserSync.reload);
   gulp.watch('./sass/*.sass', ['sass']);//.on('change', )
   gulp.watch('./jade/*.pug', ['index']);//.on('change', )
   gulp.watch('./galeria/jade/*.pug', ['galeria']);//.on('change', )
+  gulp.watch('./blog/jade/*.pug', ['blog']);//.on('change', )
 })
 gulp.task('sass', () =>{
   gulp.src('./sass/*.sass')
@@ -35,4 +37,11 @@ gulp.task('galeria', ()=>{
     pretty: true
   }))
   .pipe(gulp.dest('./galeria'))
+})
+gulp.task('blog', ()=>{
+  gulp.src('./blog/jade/*.pug')
+  .pipe(pug({
+    pretty: true
+  }))
+  .pipe(gulp.dest('./blog'))
 })

@@ -31,7 +31,8 @@ header {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 72%, 75% 100%, 0 80%); }
+  clip-path: polygon(0 0, 100% 0, 100% 72%, 75% 100%, 0 80%);
+  -o-clip-path: polygon(0 0, 100% 0, 100% 72%, 75% 100%, 0 80%); }
   header .jumbotron {
     margin-bottom: 0;
     padding: 10em 0 18em 0;

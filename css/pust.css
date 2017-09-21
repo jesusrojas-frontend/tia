@@ -1,0 +1,28 @@
+body {
+  background: #f9fbfc; }
+
+header {
+  background-image: url("../img/prueba.jpg");
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+  header .jumbotron {
+    padding: 8em 0 8em 0; }
+    header .jumbotron .medio {
+      width: 100%; }
+    header .jumbotron h1 {
+      font-family: 'Lilita One', cursive;
+      text-align: center; }
+
+.post {
+  padding: 4em 0; }
+  .post ul {
+    padding-top: 1em; }
+    .post ul li {
+      list-style: none;
+      font-size: 1.5rem; }
+    .post ul .inicio {
+      color: #828282;
+      padding-bottom: 1em; }
+  .post p {
+    font-family: 'PT Serif', serif;
+    line-height: 2em;
+    font-size: 1.5rem; }

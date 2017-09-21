@@ -3,13 +3,13 @@ html(lang="es")
 head
 	meta(charset="UTF-8")
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	title Galeria
+	title Blog
 	link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
 	link(rel="stylesheet", href="/font-awesome/css/font-awesome.min.css")
 	link(rel="stylesheet", href="/font/fuentes.css")
+	link(rel="stylesheet", href="/font/fuentes-blog.css")
 	link(rel="stylesheet", href="/css/estilos.css")
-	link(rel="stylesheet", href="/css/animations.css")
-	link(rel="stylesheet", href="/css/galeria.css")
+	link(rel="stylesheet", href="/css/blog.css")
 body
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="container">
@@ -38,47 +38,39 @@ body
 		div.jumbotron
 			.container
 				<div class="medio">
-					<h1>GALERIA</h1>
+					<h1>BLOG</h1>
 				</div>
 	</header>
-	.contenedor.container
+	
+	.container
 		.row
-			.col-md-4.col-sm-6
-				.row_item.galeria
-					img(src="/img/quienes.jpg", alt="imagen")
-					.centrado
-						a(href="#", data-toggle="modal", data-target="#exampleModal", type="button").link
-							i.fa.fa-search
-			.col-md-4.col-sm-6
-				.row_item.galeria
-					img(src="/img/quienes.jpg", alt="imagen")
-					.centrado
-						a(href="#", data-toggle="modal", data-target="#exampleModal", type="button").link
-							i.fa.fa-search
-			.col-md-4.col-sm-6
-				.row_item.galeria
-					img(src="/img/quienes.jpg", alt="imagen")
-					.centrado
-						a(href="#", data-toggle="modal", data-target="#exampleModal", type="button").link
-							i.fa.fa-search
-			.col-md-4.col-sm-6
-				.row_item.galeria
-					img(src="/img/quienes.jpg", alt="imagen")
-					.centrado
-						a(href="#", data-toggle="modal", data-target="#exampleModal", type="button").link
-							i.fa.fa-search
-			.col-md-4.col-sm-6
-				.row_item.galeria
-					img(src="/img/quienes.jpg", alt="imagen")
-					.centrado
-						a(href="#", data-toggle="modal", data-target="#exampleModal", type="button").link
-							i.fa.fa-search
-			.col-md-4.col-sm-6
-				.row_item.galeria
-					img(src="/img/quienes.jpg", alt="imagen")
-					.centrado
-						a(href="#", data-toggle="modal", data-target="#exampleModal", type="button").link
-							i.fa.fa-search
+			//.col-md-2
+			.col-md-8.item
+				.col-md-5.imagen
+					.row_item
+						img(src="/img/prueba.jpg", alt="imagen")
+				.col-md-7
+					.row_item
+						.caja
+						h1  Titulo del post
+						p  Una pequeña descipcion del post para que las personas se interesen en el tema. Ahora estoy escribiendo y haciendo texto de relleno para hacer mucho mas contenido y ver como se ve (valga la redundancia).
+						p.fecha 21/09/2017
+						p.nombre Carlos Alvarado
+						a(href="post.html") Ver más
+
+			.col-md-8.item
+				.col-md-7
+					.row_item
+						.caja
+						h1  Titulo del post
+						p  Una pequeña descipcion del post para que las personas se interesen en el tema. Ahora estoy escribiendo y haciendo texto de relleno para hacer mucho mas contenido y ver como se ve (valga la redundancia).
+						p.fecha 21/09/2017
+						p.nombre Carlos Alvarado
+						a(href="`post.html") Ver más
+				.col-md-5.imagen
+					.row_item
+						img(src="/img/prueba.jpg", alt="imagen")
+
 	footer
 		.top
 			.container
@@ -116,23 +108,5 @@ body
 		.bottom
 			.container
 				p!= "Copyright &copy; Diseño y desarrollo por <a href='http://jesusrojas.com.ve' target='_blank'>Jesús Rojas</a>"
-	<!-- Modal -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					img(src="/img/quienes.jpg", alt="imagen")
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-				</div>
-			</div>
-			</div>
-		</div>
-	script(src="/js/jquery.js")
-	script(src="/bootstrap/js/bootstrap.min.js")
+	script(src="js/jquery.js")
+	script(src="bootstrap/js/bootstrap.min.js")
