@@ -68,6 +68,58 @@ h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600; }
 
+.ver-mas {
+  display: none; }
+
+.row_item.galeria {
+  position: relative;
+  transition: .3s;
+  margin-bottom: 2em; }
+  .row_item.galeria .centrado {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 25%;
+    transition: .3s; }
+    .row_item.galeria .centrado .link {
+      color: white;
+      font-size: 3em;
+      width: 100%;
+      height: 100%;
+      padding: 2.7em 4.5em; }
+  .row_item.galeria .mas {
+    z-index: 1000; }
+    .row_item.galeria .mas .dentro {
+      background: white;
+      position: absolute;
+      top: 40%;
+      right: -18%;
+      transition: .3s;
+      z-index: 1000; }
+    .row_item.galeria .mas a {
+      text-decoration: none;
+      z-index: 1000; }
+    .row_item.galeria .mas .fa {
+      color: gray;
+      padding: .5em;
+      font-size: 2em; }
+    .row_item.galeria .mas span {
+      z-index: 1000;
+      color: gray;
+      font-family: 'Montserrat', sans-serif;
+      position: relative;
+      top: -5px;
+      padding-right: 1em; }
+  .row_item.galeria .mas:hover .dentro {
+    right: 0; }
+
+.row_item.galeria:hover .centrado {
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.5); }
+
 .servicio {
   padding: 4em 0;
   align-items: center; }
@@ -76,7 +128,8 @@ h2 {
     font-family: "Montserrat", sans-serif;
     color: #737a89; }
   .servicio img {
-    align-items: center; }
+    align-items: center;
+    width: 100%; }
 
 /* -----------------------------------------------
   * ----------------- Trabajamos -----------------*/
@@ -263,6 +316,15 @@ footer .bottom {
       color: #43ecd2;
       text-decoration: none; }
 
+/*----------------------------------------
+  * ------ Modal ------
+  * -----------------------------------*/
+.modal-dialog {
+  width: 55%; }
+
+.modal-body img {
+  width: 100%; }
+
 /* ------------------------------------------------------------------
   * ------ Responsive ------*/
 @media screen and (max-width: 1024px) {
@@ -295,7 +357,23 @@ footer .bottom {
   .trabajamos .como {
     width: 100%; }
   .servicios .col-md-3 .row_item img {
-    padding-left: 35%; } }
+    padding-left: 35%; }
+  .row_item.galeria .mas {
+    display: none; }
+  .ver-mas {
+    display: block;
+    font-family: 'Montserrat', sans-serif; }
+    .ver-mas .ver {
+      position: absolute;
+      width: 100%; }
+    .ver-mas a {
+      background: #2bdfa6;
+      position: relative;
+      padding: 2em;
+      color: white;
+      bottom: -90px;
+      left: 24%;
+      font-size: 2rem; } }
 
 @media screen and (max-width: 414px) {
   .navbar .navbar-brand {
@@ -322,4 +400,17 @@ footer .bottom {
     .quienes .row_item p {
       text-align: justify; }
   .quienes .col-md-5 img {
-    width: 100%; } }
+    width: 100%; }
+  .ver-mas {
+    display: block;
+    font-family: 'Montserrat', sans-serif; }
+    .ver-mas .ver {
+      position: relative;
+      width: 100%; }
+    .ver-mas a {
+      position: relative;
+      padding: 2em 4em;
+      color: white;
+      bottom: -10px;
+      left: 30%;
+      font-size: 1.5rem; } }

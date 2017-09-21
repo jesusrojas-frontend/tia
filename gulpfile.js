@@ -9,24 +9,30 @@ gulp.task('default', () =>{
     server: './'
   });
   gulp.watch('./**/*.html').on('change',browserSync.reload);
-  gulp.watch('./vistas/*.html').on('change',browserSync.reload);
-  gulp.watch('./css/*.css').on('change',browserSync.reload);
+  gulp.watch('./galeria/*.html').on('change',browserSync.reload);
+  gulp.watch('./**/*.css').on('change',browserSync.reload);
   gulp.watch('./*.php').on('change',browserSync.reload);
   gulp.watch('./js/*.js').on('change',browserSync.reload);
-  gulp.watch('./js/servicios/*.js').on('change',browserSync.reload);
-  gulp.watch('./js/controladores/*.js').on('change',browserSync.reload);
   gulp.watch('./sass/*.sass', ['sass']);//.on('change', )
-  gulp.watch('./jade/*.pug', ['pug']);//.on('change', )
+  gulp.watch('./jade/*.pug', ['index']);//.on('change', )
+  gulp.watch('./galeria/jade/*.pug', ['galeria']);//.on('change', )
 })
 gulp.task('sass', () =>{
   gulp.src('./sass/*.sass')
     .pipe(sass())
     .pipe(gulp.dest('./css'))
 })
-gulp.task('pug', ()=>{
+gulp.task('index', ()=>{
   gulp.src('./jade/*.pug')
   .pipe(pug({
     pretty: true
   }))
   .pipe(gulp.dest('./'))
+})
+gulp.task('galeria', ()=>{
+  gulp.src('./galeria/jade/index.pug')
+  .pipe(pug({
+    pretty: true
+  }))
+  .pipe(gulp.dest('./galeria'))
 })

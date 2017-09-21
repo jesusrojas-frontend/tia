@@ -2,7 +2,7 @@
 <html lang="es"></html>
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>Santa teresa de los angeles</title>
+  <title>Santa Teresa de los Andes</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="font/fuentes.css">
@@ -23,9 +23,7 @@
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 <ul class="nav navbar-nav navbar-right">
 <li><a href="#">Inicio</a></li>
-<li><a href="#como">Como trabajamos</a></li>
-<li><a href="#quienes">Quienes somos</a></li>
-<li><a href="#servicios">Nuestros servicios</a></li>
+<li><a href="/galeria">Galeria</a></li>
 <li><a href="/contacto">Contacto</a></li>
 </ul>
 </div><!-- /.navbar-collapse -->
@@ -38,32 +36,19 @@
     </div>
     <p><a class="btn btn-log" href="/contacto" role="button">Buscanos</a><a class="btn btn-log" href="#servicios" role="button">Ver los servicios</a></p></div>
   </header>
-  <section class="container servicio">
-    <div class="row">
-      <div class="col-md-4 a"><img src="" alt="imagen">
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-      </div>
-      <div class="col-md-4 b"><img src="" alt="imagen">
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-      </div>
-      <div class="col-md-4 c"><img src="" alt="imagen">
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-      </div>
-    </div>
-  </section>
   <section class="trabajamos">
     <div class="row">
-      <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.0488563210605!2d-69.28965517084883!3d10.083067699549655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8767879883c9c5%3A0x8100459705ca17fe!2sCalle+Guri%2C+Barquisimeto+3001%2C+Lara!5e0!3m2!1ses!2sve!4v1494103010131" width="100%" height="900" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-      <div class="como" id="como">
+      <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.51226120586878!2d-69.29000110868506!3d10.083005852115784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e876787a593c3b7%3A0x1fbe0a4cf4721383!2sLaboratorio+Cl%C3%ADnico+Santa+Teresa+de+Los+Andes!5e0!3m2!1ses!2sve!4v1505913292180" width="100%" height="900" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+      <div class="como">
         <div class="row_item">
           <div class="container">
             <h2>¿Como Trabajamos?</h2>
             <ul>
-              <li class="numeroa"><span class='numero'>1</span> Ustedes se contactan con nuestras oficinas.</li>
-              <li class="numerob"><span class='numero'>2</span> Nuestro personal toma muestras sin moverse de sus instalaciones.</li>
-              <li class="numeroc"><span class='numero'>3</span> Nosotros trasladamos dichas muestras hasta nuestras instalaciones.</li>
-              <li class="numerod"><span class='numero'>4</span> Porcesamos las mismas.</li>
-              <li class="numeroe"><span class='numero'>5</span> Emitimos los resultados tanto en físico así como por vía correo electrónico.</li>
+              <li><span class='numero'>1</span> Ustedes se contactan con nuestras oficinas.</li>
+              <li><span class='numero'>2</span> Nuestro personal toma muestras sin moverse de sus instalaciones.</li>
+              <li><span class='numero'>3</span> Nosotros trasladamos dichas muestras hasta nuestras instalaciones.</li>
+              <li><span class='numero'>4</span> Porcesamos las mismas.</li>
+              <li><span class='numero'>5</span> Emitimos los resultados tanto en físico así como por vía correo electrónico.</li>
             </ul>
           </div>
         </div>
@@ -161,6 +146,32 @@
       </div>
     </div>
   </section>
+  <section class="servicio">
+    <h2 class="text-center">Galeria</h2>
+    <div class="row"><br>
+      <div class="col-md-4 col-sm-6">
+        <div class="row_item galeria"><img src="img/quienes.jpg" alt="imagen">
+          <div class="centrado"><a class="link" href="#" data-toggle="modal" data-target="#exampleModal" type="button"><i class="fa fa-search"></i></a></div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="row_item galeria"><img src="img/quienes.jpg" alt="imagen">
+          <div class="centrado"><a class="link" href="#" data-toggle="modal" data-target="#exampleModal" type="button"><i class="fa fa-search"></i></a></div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="row_item galeria"><img src="img/quienes.jpg" alt="imagen">
+          <div class="centrado"><a class="link" href="#" data-toggle="modal" data-target="#exampleModal" type="button"><i class="fa fa-search"></i></a></div>
+          <div class="mas">
+            <div class="dentro"><a href="/galeria"><i class='fa fa-chevron-right'></i> <span>Ver más</span></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 ver-mas">
+        <div class="ver"><a href="/galeria">Ver más</a></div>
+      </div>
+    </div>
+  </section>
   <div class="contactanos">
     <div class="container">
       <div class="col-md-6"><div class="media">
@@ -181,24 +192,27 @@
           <div class="col-md-4">
             <h3>Siguenos</h3>
             <ul class="redes">
-              <li><a href="#"><i class="fa fa-google"></i></a></li>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <!--li
+              a(href="#", target="_blank")
+              	i.fa.fa-google
+              -->
+              <li><a href="http://www.facebook.com/lab.santateresa" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/labsantateresa" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/lab.santateresa/" target="_blank"><i class="fa fa-instagram"></i></a></li>
             </ul>
           </div>
           <div class="col-md-4 soporte">
             <h3>Soporte</h3>
             <ul>
               <li> <a href="#">FAQs</a></li>
-              <li> <a href="#">Contacto</a></li>
+              <li> <a href="/contacto">Contacto</a></li>
               <li> <a href="#">Blog</a></li>
             </ul>
           </div>
           <div class="col-md-4 direccion">
             <h3>Direccion</h3>
             <ul>
-              <li>labsantateresadelosangeles@gmail.com</li>
+              <li>labsantateresadelosandes@gmail.com</li>
               <li class="ubicacion">Urb. Patarata II Calle guri casa nro 280</li>
               <li>+58 0251-719-1923 / 0251-0514521</li>
             </ul>
@@ -211,8 +225,23 @@
         <p>Copyright &copy; Diseño y desarrollo por <a href='http://jesusrojas.com.ve' target='_blank'>Jesús Rojas</a></p>
       </div>
     </div>
-  </footer>
+  </footer><!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body"><img src="img/quienes.jpg" alt="imagen"></div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+<a type="button" class="btn btn-primary" href="/galeria">Ver más</a>
+</div>
+</div>
+</div>
+</div>
   <script src="js/jquery.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/app.js"></script>
 </body>

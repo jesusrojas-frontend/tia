@@ -1,5 +1,47 @@
-<!DOCTYPE html>
-<html lang="es">
+<?php
+
+/****************************************************************
+Recibe los datos ingresados
+****************************************************************/
+$nombre = $_POST['nombre'];
+$email = $_POST['email'];
+$comentario = $_POST['mensaje'];
+
+if( empty($nombre) || empty($email) || empty($comentario) ) {
+
+	$error = true;
+
+}
+
+
+/****************************************************************
+Aquí debes ingresar el asunto del mail
+****************************************************************/
+$subject = 'Contacto desde tu pagina de: ' . $nombre ;
+$comentario = stripcslashes($comentario);
+
+
+
+/****************************************************************
+Aquí se genera el cuerpo del mensaje
+****************************************************************/
+$mensaje = "De: $nombre \n
+E-mail: $email \n
+Mensaje: $comentario \n
+\n";
+
+$from = "From: $email\r\n";
+
+
+
+/****************************************************************
+ingresa mail receptor
+****************************************************************/
+
+if( !$error ) {
+	mail("labsantateresadelosandes@gmail.com", $subject, $mensaje, $from);
+}
+?>
 <head>
 	<meta charset="UTF-8">
 	<title>Contactos</title>
@@ -39,6 +81,7 @@
   </header>
   <section class="contenedor">
   	<div class="container">
+  	<?php if( $error ) { ?>
   		<div class="row">
   			<div class="col-md-6 formulario">
   				<h1>Formulario</h1>
@@ -73,10 +116,25 @@
   			</div>
   			<div class="col-md-6 mapa">
   				<h1>Mapa</h1>
-  				 <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.51226120586878!2d-69.29000110868506!3d10.083005852115784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e876787a593c3b7%3A0x1fbe0a4cf4721383!2sLaboratorio+Cl%C3%ADnico+Santa+Teresa+de+Los+Andes!5e0!3m2!1ses!2sve!4v1505913292180" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+  				 <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.0488563210605!2d-69.28965517084883!3d10.083067699549655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8767879883c9c5%3A0x8100459705ca17fe!2sCalle+Guri%2C+Barquisimeto+3001%2C+Lara!5e0!3m2!1ses!2sve!4v1494103010131" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
   			</div>
   		</div>
   	</div>
+  	<?php } else { ?>
+
+          <div class="row">
+          	<div class="informacion">
+          		<p>Gracias por contactarte con nosotros, responderemos a su solicitud con la mayor brevedad posible</p>
+          	</div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+        <?php } ?>
   </section>
   <footer>
   	<div class="top">

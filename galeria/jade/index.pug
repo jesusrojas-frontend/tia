@@ -1,0 +1,135 @@
+doctype html
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	title Galeria
+	link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
+	link(rel="stylesheet", href="/font-awesome/css/font-awesome.min.css")
+	link(rel="stylesheet", href="/font/fuentes.css")
+	link(rel="stylesheet", href="/css/estilos.css")
+	link(rel="stylesheet", href="/css/animations.css")
+	link(rel="stylesheet", href="/css/galeria.css")
+body
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Lab Santa teresa de los andes</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+				<li><a href="/">Inicio</a></li>
+				<li><a href="/galeria">Galeria</a></li>
+				<li><a href="/contacto">Contacto</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<header>
+		div.jumbotron
+			.container
+				<div class="medio">
+					<h1>GALERIA</h1>
+				</div>
+	</header>
+	.contenedor.container
+		.row
+			.col-md-4.col-sm-6
+				.row_item.galeria
+					img(src="/img/quienes.jpg", alt="imagen")
+					.centrado
+						a(href="#", data-toggle="modal", data-target="#exampleModal", type="button").link
+							i.fa.fa-search
+			.col-md-4.col-sm-6
+				.row_item.galeria
+					img(src="/img/quienes.jpg", alt="imagen")
+					.centrado
+						a(href="#", data-toggle="modal", data-target="#exampleModal", type="button").link
+							i.fa.fa-search
+			.col-md-4.col-sm-6
+				.row_item.galeria
+					img(src="/img/quienes.jpg", alt="imagen")
+					.centrado
+						a(href="#", data-toggle="modal", data-target="#exampleModal", type="button").link
+							i.fa.fa-search
+			.col-md-4.col-sm-6
+				.row_item.galeria
+					img(src="/img/quienes.jpg", alt="imagen")
+					.centrado
+						a(href="#", data-toggle="modal", data-target="#exampleModal", type="button").link
+							i.fa.fa-search
+			.col-md-4.col-sm-6
+				.row_item.galeria
+					img(src="/img/quienes.jpg", alt="imagen")
+					.centrado
+						a(href="#", data-toggle="modal", data-target="#exampleModal", type="button").link
+							i.fa.fa-search
+			.col-md-4.col-sm-6
+				.row_item.galeria
+					img(src="/img/quienes.jpg", alt="imagen")
+					.centrado
+						a(href="#", data-toggle="modal", data-target="#exampleModal", type="button").link
+							i.fa.fa-search
+	footer
+		.top
+			.container
+				.row
+					.col-md-4
+						h3 Siguenos
+						ul.redes
+							//li
+								a(href="#", target="_blank")
+									i.fa.fa-google
+							li
+								a(href="http://www.facebook.com/lab.santateresa", target="_blank")
+									i.fa.fa-facebook
+							li
+								a(href="https://twitter.com/labsantateresa", target="_blank")
+									i.fa.fa-twitter
+							li
+								a(href="https://www.instagram.com/lab.santateresa/", target="_blank")
+									i.fa.fa-instagram
+					.col-md-4.soporte
+						h3 Soporte
+						ul
+							li 
+								a(href="#") FAQs
+							li 
+								a(href="/contacto") Contacto
+							li 
+								a(href="#") Blog
+					.col-md-4.direccion
+						h3 Direccion
+						ul
+							li labsantateresadelosandes@gmail.com
+							li.ubicacion Urb. Patarata II Calle guri casa nro 280
+							li +58 0251-719-1923 / 0251-0514521
+		.bottom
+			.container
+				p!= "Copyright &copy; Diseño y desarrollo por <a href='http://jesusrojas.com.ve' target='_blank'>Jesús Rojas</a>"
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					img(src="/img/quienes.jpg", alt="imagen")
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+			</div>
+		</div>
+	script(src="/js/jquery.js")
+	script(src="/bootstrap/js/bootstrap.min.js")

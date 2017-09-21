@@ -3,7 +3,7 @@ html(lang="es")
 head
 	meta(charset="UTF-8")
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	title Santa teresa de los angeles
+	title Santa Teresa de los Andes
 	link(rel="stylesheet", href="bootstrap/css/bootstrap.min.css")
 	link(rel="stylesheet", href="font-awesome/css/font-awesome.min.css")
 	link(rel="stylesheet", href="font/fuentes.css")
@@ -24,9 +24,7 @@ body
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 				<li><a href="#">Inicio</a></li>
-				<li><a href="#como">Como trabajamos</a></li>
-				<li><a href="#quienes">Quienes somos</a></li>
-				<li><a href="#servicios">Nuestros servicios</a></li>
+				<li><a href="/galeria">Galeria</a></li>
 				<li><a href="/contacto">Contacto</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
@@ -41,31 +39,22 @@ body
 					a.btn.btn-log(href="/contacto", role="button") Buscanos
 					a.btn.btn-log(href="#servicios", role="button") Ver los servicios
 			</div>
-	section.container.servicio
-		.row
-			.col-md-4.a
-				img(src="", alt="imagen")
-				h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-			.col-md-4.b
-				img(src="", alt="imagen")
-				h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-			.col-md-4.c
-				img(src="", alt="imagen")
-				h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	
+
 	section.trabajamos
 		.row
 			.mapa
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d982.0488563210605!2d-69.28965517084883!3d10.083067699549655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8767879883c9c5%3A0x8100459705ca17fe!2sCalle+Guri%2C+Barquisimeto+3001%2C+Lara!5e0!3m2!1ses!2sve!4v1494103010131" width="100%" height="900" frameborder="0" style="border:0" allowfullscreen></iframe>
-			.como#como
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.51226120586878!2d-69.29000110868506!3d10.083005852115784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e876787a593c3b7%3A0x1fbe0a4cf4721383!2sLaboratorio+Cl%C3%ADnico+Santa+Teresa+de+Los+Andes!5e0!3m2!1ses!2sve!4v1505913292180" width="100%" height="900" frameborder="0" style="border:0" allowfullscreen></iframe>
+			.como
 				.row_item
 					.container
 						h2 ¿Como Trabajamos?
 						ul
-							li.numeroa!= "<span class='numero'>1</span> Ustedes se contactan con nuestras oficinas."
-							li.numerob!= "<span class='numero'>2</span> Nuestro personal toma muestras sin moverse de sus instalaciones."
-							li.numeroc!= "<span class='numero'>3</span> Nosotros trasladamos dichas muestras hasta nuestras instalaciones."
-							li.numerod!= "<span class='numero'>4</span> Porcesamos las mismas."
-							li.numeroe!= "<span class='numero'>5</span> Emitimos los resultados tanto en físico así como por vía correo electrónico."
+							li!= "<span class='numero'>1</span> Ustedes se contactan con nuestras oficinas."
+							li!= "<span class='numero'>2</span> Nuestro personal toma muestras sin moverse de sus instalaciones."
+							li!= "<span class='numero'>3</span> Nosotros trasladamos dichas muestras hasta nuestras instalaciones."
+							li!= "<span class='numero'>4</span> Porcesamos las mismas."
+							li!= "<span class='numero'>5</span> Emitimos los resultados tanto en físico así como por vía correo electrónico."
 	section.quienes#quienes
 		.row
 			.col-md-7
@@ -74,6 +63,7 @@ body
 						p!= "<strong>LABORATORIO CLINICO SANTA TERESA DE LOS ANDES</strong>, es una empresa que busca innovar, transformar ofreciendo un servicio de calidad integrado alcanzando el mas alto nivel de excelencia, profesionalismo en el área de la salud para lograr cubrir las necesidades de nuestros pacientes, ofreciéndoles un servicio en salud ocupacional.<br><br>Hacemos examenes medico preventivo, a través  de planes estructurados, a saber, plan de pre y post Empleo, Pre y post Vacacional, exámenes periódicos, atención médica autorizada a todos sus Empleados bien sea en la sede de su empresa y/o en nuestras instalaciones. "
 			.col-md-5
 				img(src="img/quienes.jpg", alt="imagen")
+	
 	section.servicios#servicios
 		.container
 			h2.text-center ¿Que Tratamos?
@@ -151,6 +141,34 @@ body
 						h3 Química Sanguínea
 						p.
 							Es una serie de pruebas que suministra información al médico o Naturópata de las condiciones del metabolismo en el cuerpo humano y además como funcionan ciertos órganos como el hígado riñón etc.
+	section.servicio
+		h2.text-center Galeria
+		.row
+			br
+			.col-md-4.col-sm-6
+				.row_item.galeria
+					img(src="img/quienes.jpg", alt="imagen")
+					.centrado
+						a(href="#", data-toggle="modal", data-target="#exampleModal", type="button").link
+							i.fa.fa-search
+			.col-md-4.col-sm-6
+				.row_item.galeria
+					img(src="img/quienes.jpg", alt="imagen")
+					.centrado
+						a(href="#", data-toggle="modal", data-target="#exampleModal", type="button").link
+							i.fa.fa-search
+			.col-md-4.col-sm-6
+				.row_item.galeria
+					img(src="img/quienes.jpg", alt="imagen")
+					.centrado
+						a(href="#", data-toggle="modal", data-target="#exampleModal", type="button").link
+							i.fa.fa-search
+					.mas
+						.dentro
+							a(href="/galeria")!= "<i class='fa fa-chevron-right'></i> <span>Ver más</span>"
+			.col-sm-6.ver-mas
+				.ver
+					a(href="/galeria") Ver más
 	.contactanos
 		.container
 			.col-md-6
@@ -173,17 +191,17 @@ body
 					.col-md-4
 						h3 Siguenos
 						ul.redes
-							li
-								a(href="#")
+							//li
+								a(href="#", target="_blank")
 									i.fa.fa-google
 							li
-								a(href="#")
+								a(href="http://www.facebook.com/lab.santateresa", target="_blank")
 									i.fa.fa-facebook
 							li
-								a(href="#")
+								a(href="https://twitter.com/labsantateresa", target="_blank")
 									i.fa.fa-twitter
 							li
-								a(href="#")
+								a(href="https://www.instagram.com/lab.santateresa/", target="_blank")
 									i.fa.fa-instagram
 					.col-md-4.soporte
 						h3 Soporte
@@ -191,19 +209,37 @@ body
 							li 
 								a(href="#") FAQs
 							li 
-								a(href="#") Contacto
+								a(href="/contacto") Contacto
 							li 
 								a(href="#") Blog
 					.col-md-4.direccion
 						h3 Direccion
 						ul
-							li labsantateresadelosangeles@gmail.com
+							li labsantateresadelosandes@gmail.com
 							li.ubicacion Urb. Patarata II Calle guri casa nro 280
 							li +58 0251-719-1923 / 0251-0514521
 		.bottom
 			.container
 				p!= "Copyright &copy; Diseño y desarrollo por <a href='http://jesusrojas.com.ve' target='_blank'>Jesús Rojas</a>"
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					img(src="img/quienes.jpg", alt="imagen")
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+					<a type="button" class="btn btn-primary" href="/galeria">Ver más</a>
+				</div>
+			</div>
+			</div>
+		</div>
 	script(src="js/jquery.js")
 	script(src="bootstrap/js/bootstrap.min.js")
-	script(src="js/app.js")
 	//- img(src="img/landing.png", alt="",style="width: 100%; margin-top: 4em")
