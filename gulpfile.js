@@ -11,6 +11,8 @@ gulp.task('default', () =>{
   gulp.watch('./**/*.html').on('change',browserSync.reload);
   gulp.watch('./galeria/*.html').on('change',browserSync.reload);
   gulp.watch('./blog/*.html').on('change',browserSync.reload);
+  gulp.watch('./preguntas-frecuentes/*.html').on('change',browserSync.reload);
+  gulp.watch('./quienes-somos/*.html').on('change',browserSync.reload);
   gulp.watch('./**/*.css').on('change',browserSync.reload);
   gulp.watch('./*.php').on('change',browserSync.reload);
   gulp.watch('./js/*.js').on('change',browserSync.reload);
@@ -18,6 +20,8 @@ gulp.task('default', () =>{
   gulp.watch('./jade/*.pug', ['index']);//.on('change', )
   gulp.watch('./galeria/jade/*.pug', ['galeria']);//.on('change', )
   gulp.watch('./blog/jade/*.pug', ['blog']);//.on('change', )
+  gulp.watch('./quienes-somos/jade/*.pug', ['quienes']);//.on('change', )
+  gulp.watch('./preguntas-frecuentes/jade/*.pug', ['preguntas']);//.on('change', )
 })
 gulp.task('sass', () =>{
   gulp.src('./sass/*.sass')
@@ -44,4 +48,18 @@ gulp.task('blog', ()=>{
     pretty: true
   }))
   .pipe(gulp.dest('./blog'))
+})
+gulp.task('quienes', ()=>{
+  gulp.src('./quienes-somos/jade/*.pug')
+  .pipe(pug({
+    pretty: true
+  }))
+  .pipe(gulp.dest('./quienes-somos'))
+})
+gulp.task('preguntas', ()=>{
+  gulp.src('./preguntas-frecuentes/jade/*.pug')
+  .pipe(pug({
+    pretty: true
+  }))
+  .pipe(gulp.dest('./preguntas-frecuentes'))
 })

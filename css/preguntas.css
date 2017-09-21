@@ -1,0 +1,29 @@
+body {
+  background: #f6f4f4; }
+
+.preguntas {
+  left: 12.5%; }
+  .preguntas .card-header {
+    background: white;
+    padding: 2em;
+    z-index: 1000;
+    box-shadow: 0px 0px 20px 5px #eee;
+    border-bottom: #eee 1px solid;
+    position: relative; }
+  .preguntas .mb-0 {
+    text-transform: uppercase;
+    display: inline;
+    background: white; }
+    .preguntas .mb-0 a {
+      width: 100%;
+      display: inline;
+      color: #8a8a8a;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold; }
+  .preguntas .collapse {
+    z-index: 50;
+    box-shadow: 2px 2px 2px #eee;
+    background: #fdfdfd;
+    padding: 2.5em 2em; }
+    .preguntas .collapse .card-body {
+      font-family: 'Montserrat', sans-serif; }
