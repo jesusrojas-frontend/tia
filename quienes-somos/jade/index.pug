@@ -3,13 +3,13 @@ html(lang="es")
 head
 	meta(charset="UTF-8")
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	title Blog
+	title Información
 	link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
 	link(rel="stylesheet", href="/font-awesome/css/font-awesome.min.css")
 	link(rel="stylesheet", href="/font/fuentes.css")
 	link(rel="stylesheet", href="/font/fuentes-blog.css")
 	link(rel="stylesheet", href="/css/estilos.css")
-	link(rel="stylesheet", href="/css/blog.css")
+	link(rel="stylesheet", href="/css/quienes.css")
 body
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="container">
@@ -24,8 +24,8 @@ body
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">¿Quienes Somos?</a></li>
+				<li><a href="/">Inicio</a></li>
+				<li><a href="/quienes-somos">Información</a></li>
 				<li><a href="/preguntas-frecuentes">Preguntas</a></li>
 				<li><a href="/galeria">Galeria</a></li>
 				<li><a href="/blog">Blog</a></li>
@@ -38,9 +38,95 @@ body
 		div.jumbotron
 			.container
 				<div class="medio">
-					<h1>Preguntas Frecuentes</h1>
+					<h1>INFORMACIÓN</h1>
 				</div>
 	</header>
+	
+	.container.quiene
+		.row
+			.col-md-6
+				.row_item
+					h1 Como empezamos
+					.texto
+						p Kontist is not one of those flash in the pan ideas...
+						p Kontist is the solution to a very tangible problem: there are no banking products specifically tailored to the needs of freelancers in Germany.
+						p Our team is made up of current and former freelancers who have experienced first-hand how badly prepared traditional banks are to help the self-employed. As freelancers, we want banking products that focus on our needs and help us better organize our finances.
+			.col-md-6.derecha
+				.row_item
+					p This was exactly the feedback our CEO Chris heard from the growing freelance community in Germany at his last company Debitoor, an accounting software for SMEs and freelancers.
+					p However, Chris' subsequent attempts to convince traditional banks to develop products for the self-employed fell on deaf ears. Inspired and motivated by the idea, he assembled a team of current and former freelancers from all over the world to create the first banking solution exclusively for the self-employed.
+		<blockquote class="blockquote text-center .row_item">
+			i.fa.fa-quote-left
+			<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+			<footer class="blockquote-footer"><cite title="Santa Teresa de los Andes">Santa Teresa de los Andes</cite></footer>
+		</blockquote>
+		.mision.row_item
+			h1 Nuestra mision
+			p We believe freelancers shape the future of work, challenging traditional company structures and combining flexibility and individuality to create successful businesses. However, there are still a lot of obstacles freelancers face, especially when it comes to their finances. This is where Kontist comes in with a bank account exclusiv
+		.vision.vision.row_item
+			h1 Nuestra vision
+			p We believe freelancers shape the future of work, challenging traditional company structures and combining flexibility and individuality to create successful businesses. However, there are still a lot of obstacles freelancers face, especially when it comes to their finances. This is where Kontist comes in with a bank account exclusively for freelancers that understands you and helps you stay on top of your finances.
+	
+	.equipo.quiene
+		.container
+			h1 Nuestro equipo
+			.row.row_item
+				.col-md-3
+					.row_item
+						.head
+							img(src="/img/persona.png", alt="imagen")
+						.body
+							h3 Josefa Sinforoza
+							p.puesto puesto de trabajo
+				.col-md-3
+					.row_item
+						.head
+							img(src="/img/persona.png", alt="imagen")
+						.body
+							h3 Josefa Sinforoza
+							p.puesto puesto de trabajo
+				.col-md-3
+					.row_item
+						.head
+							img(src="/img/persona.png", alt="imagen")
+						.body
+							h3 Josefa Sinforoza
+							p.puesto puesto de trabajo
+				.col-md-3
+					.row_item
+						.head
+							img(src="/img/persona.png", alt="imagen")
+						.body
+							h3 Josefa Sinforoza
+							p.puesto puesto de trabajo
+				.col-md-3
+					.row_item
+						.head
+							img(src="/img/persona.png", alt="imagen")
+						.body
+							h3 Josefa Sinforoza
+							p.puesto puesto de trabajo
+				.col-md-3
+					.row_item
+						.head
+							img(src="/img/persona.png", alt="imagen")
+						.body
+							h3 Josefa Sinforoza
+							p.puesto puesto de trabajo
+				.col-md-3
+					.row_item
+						.head
+							img(src="/img/persona.png", alt="imagen")
+						.body
+							h3 Josefa Sinforoza
+							p.puesto puesto de trabajo
+				.col-md-3
+					.row_item
+						.head
+							img(src="/img/persona.png", alt="imagen")
+						.body
+							h3 Josefa Sinforoza
+							p.puesto puesto de trabajo
 
 	footer
 		.top
@@ -65,11 +151,11 @@ body
 						h3 Soporte
 						ul
 							li 
-								a(href="#") FAQs
+								a(href="/preguntas-frecuentes") FAQs
 							li 
 								a(href="/contacto") Contacto
 							li 
-								a(href="#") Blog
+								a(href="/blog") Blog
 					.col-md-4.direccion
 						h3 Direccion
 						ul

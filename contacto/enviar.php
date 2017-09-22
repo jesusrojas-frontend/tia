@@ -65,16 +65,16 @@ if( !$error ) {
 				<a class="navbar-brand" href="/">Lab Santa Teresa de los Andes</a>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">¿Quienes Somos?</a></li>
-				<li><a href="/preguntas-frecuentes">Preguntas</a></li>
-				<li><a href="/galeria">Galeria</a></li>
-				<li><a href="/blog">Blog</a></li>
-				<li><a href="/contacto">Contacto</a></li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/quienes-somos">Información</a></li>
+        <li><a href="/preguntas-frecuentes">Preguntas</a></li>
+        <li><a href="/galeria">Galeria</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
 	</nav>
 	<header><div class="jumbotron">
 	<div class="container">
@@ -155,9 +155,9 @@ if( !$error ) {
           <div class="col-md-4 soporte">
             <h3>Soporte</h3>
             <ul>
-              <li> <a href="#">FAQs</a></li>
+              <li> <a href="/preguntas-frecuentes">FAQs</a></li>
               <li> <a href="/contacto">Contacto</a></li>
-              <li> <a href="#">Blog</a></li>
+              <li> <a href="/blog">Blog</a></li>
             </ul>
           </div>
           <div class="col-md-4 direccion">
