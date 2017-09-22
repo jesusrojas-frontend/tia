@@ -1,6 +1,16 @@
 body {
   background: #f6f4f4; }
 
+header {
+  background-image: none;
+  clip-path: polygon(0 0, 100% 0, 100% 72%, 50% 100%, 0 80%); }
+  header .jumbotron {
+    padding: 4em 0 4em 0; }
+    header .jumbotron .medio {
+      width: 100%; }
+    header .jumbotron h1 {
+      text-align: center; }
+
 .preguntas .card-header {
   background: white;
   padding: 2em;
