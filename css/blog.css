@@ -11,6 +11,10 @@ header {
     header .jumbotron h1 {
       text-align: center; }
 
+.construccion {
+  padding-top: 3em;
+  padding-bottom: 10em; }
+
 .row {
   margin: 2em 0;
   width: 100%;
