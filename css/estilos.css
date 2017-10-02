@@ -239,6 +239,7 @@ h2 {
     transform: rotateY(180deg);
     display: block; }
   .servicios .col-md-3:hover .row_item {
+    box-shadow: 1px 2px 30px #eee;
     height: 173px; }
   .servicios .col-md-3:hover img, .servicios .col-md-3:hover h3 {
     display: none; }
