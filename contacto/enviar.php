@@ -177,5 +177,7 @@ if( !$error ) {
       </div>
     </div>
   </footer>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107408782-1"></script>
+  <script src="/js/google.js"></script>
 </body>
 </html>
