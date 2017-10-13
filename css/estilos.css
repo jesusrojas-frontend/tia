@@ -378,8 +378,6 @@ footer .bottom {
       font-size: 2rem; } }
 
 @media screen and (max-width: 414px) {
-  .navbar .navbar-brand {
-    width: 80%; }
   .navbar .collapse, .navbar .navbar-header {
     background: linear-gradient(left, rgba(82, 141, 223, 0.8), rgba(43, 223, 166, 0.5));
     background: -webkit-linear-gradient(left, rgba(82, 141, 223, 0.8), rgba(43, 223, 166, 0.5));
@@ -415,4 +413,6 @@ footer .bottom {
       color: white;
       bottom: -10px;
       left: 30%;
-      font-size: 1.5rem; } }
+      font-size: 1.5rem; }
+  .pregunta {
+    margin-top: 2em; } }

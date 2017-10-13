@@ -62,3 +62,21 @@ header {
   .equipo .puesto {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase; }
+
+@media screen and (max-width: 414px) {
+  .quiene h1 {
+    font-size: 3rem; }
+  .quiene p {
+    font-size: 1.2rem; }
+  .quiene .derecha {
+    padding-top: 0; }
+    .quiene .derecha .row_item {
+      padding-top: 0; }
+  .quiene .blockquote {
+    padding: 2em 2.2em; }
+    .quiene .blockquote p {
+      font-size: 2.5rem; }
+    .quiene .blockquote cite {
+      font-size: 1.2rem; }
+  .vision.row_item {
+    padding-top: 0; } }
